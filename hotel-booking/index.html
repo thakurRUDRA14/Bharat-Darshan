@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+           <li><a href="../index.html">Home</a></li>
+           <li><a href="#festivals">Festivals</a>
+              <ul>
+                 <li><a href="#major-festivals">Major Festivals</a></li>
+                 <li><a href="#regional-celebrations">Regional Celebrations</a></li>
+                 <li><a href="#cultural-events">Cultural Events</a></li>
+              </ul>
+           </li>
+           <li><a href="#h_carousel">Tourist Spots</a>
+           </li>
+           <li><a href="#explore-by-state">Explore by State</a>
+              <ul>
+                 <li><a href="../states/up.html">Uttar Pradesh</a></li>
+                 <li><a href="#south-india">Tamil Nadu</a></li>
+                 <li><a href="#east-india">Assam</a></li>
+                 <li><a href="#west-india">Gujarat</a></li>
+                 <li><a href="#Soon">So on...</a></li>
+  
+              </ul>
+           </li>
+           <li><a href="#seasonal-highlights">Seasonal Highlights</a>
+              <ul>
+                 <li><a href="#monsoon-wonders">Monsoon Wonders</a></li>
+                 <li><a href="#winter-escapes">Winter Escapes</a></li>
+                 <li><a href="#summer-retreats">Summer Retreats</a></li>
+              </ul>
+           </li>
+           <li><a href="#travel-services">Booking Services</a>
+              <ul>
+                 <li><a href="../hotel-booking/index.html">Book Your Hotels</a></li>
+                 <li><a href="#tour-guides">Tour Guides</a></li>
+                 <li><a href="#custom-itineraries">Custom Itineraries</a></li>
+              </ul>
+           </li>
+           <li><a href="#shop-by-region">Shop by Region</a>
+              <ul>
+                 <li><a href="#handicrafts">Handicrafts & Souvenirs</a></li>
+                 <li><a href="#local-cuisine">Local Cuisine & Spices</a></li>
+                 <li><a href="#traditional-attire">Traditional Attire</a></li>
+              </ul>
+           </li>
+           <li><a href="#travel-guides">Travel Guides</a>
+              <ul>
+                 <li><a href="#planning-tips">Planning Tips</a></li>
+                 <li><a href="#language-customs">Language & Customs</a></li>
+              </ul>
+           </li>
+           <li><a href="#map_com">Map</a>
+           </li>
+           <li><a href="#contact_us">Contact Us</a></li>
+           <li><a href="#about_us">About</a></li>
+        </ul>
+     </nav>
+    <div class="container">
+        <h1>Hotel Booking</h1>
+        <form id="searchForm">
+            <div class="form-group">
+                <label for="search">Search Hotel:</label>
+                <input type="text" id="search" name="search" placeholder="Enter place name...">
+                <button type="submit">Search</button>
+            </div>
+        </form>
+        <div id="hotelList" class="hotel-list"></div>
+        <div id="bookingForm" class="booking-form hidden">
+            <h2>Booking Form</h2>
+            <form id="bookingDetails">
+                <input type="hidden" id="selectedHotel" name="selectedHotel">
+                <div class="form-group">
+                    <label for="checkin">Check-in Date:</label>
+                    <input type="date" id="checkin" name="checkin" required>
+                </div>
+                <div class="form-group">
+                    <label for="checkout">Check-out Date:</label>
+                    <input type="date" id="checkout" name="checkout" required>
+                </div>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <button type="submit">Book Now</button>
+                <button type="button" id="cancelBooking">Cancel</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
